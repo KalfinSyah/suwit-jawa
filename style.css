@@ -1,0 +1,104 @@
+body {
+    background-color: #25150b;
+
+    font-family: 'Satisfy', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    /* border: 5px solid black; */
+    border: 0px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    height: 150px;
+    margin: 0 10px 0 10px;
+    width: 150px;
+}
+
+.enemy img {
+    background-color: #cacacab9;
+    border: 15px solid #2e2714;
+}
+/* .player img:hover {
+    background-color: #000000d3;
+    border: 15px solid #2e2714;
+    transition: 1s;
+} */
+
+.player img.cover_up{
+    border: 15px solid #2e2714;
+    transition: 1s;
+}
+
+.title {
+    color: #8d0808;
+    font-size: 64px;
+    margin: 30px auto 50px auto;
+    text-shadow: 0px 0px 20px #8d0808;
+
+    text-align: center;
+}
+
+.container {
+    background-image: url('body_bg.jpg');
+    box-shadow: 10px 10px 5px #000000,
+                -10px -10px 5px #000000;
+    display: grid;
+    grid-template-columns: 100%;
+    height: fit-content;
+    margin: 0 auto 50px auto;
+    width: 80vw;
+}
+
+.enemy_score,
+.player_score {
+    background-color: #080808;
+    box-sizing: border-box;
+    border-radius: 50%;
+    color: #cacaca;
+    height: fit-content;
+    margin: auto;
+    padding: 5px 20px 0 20px;
+    text-align: center;
+    width: fit-content;
+}
+
+.enemy_score h1,
+.player_score h1 {
+    height: 10px;
+    line-height: 10px;
+}
+
+.result_displayer {
+    background-color: #422412;
+    color: #b9b9b9;
+}
+.result_displayer h1 {
+    text-shadow: 0px 0px 20px #b9b9b9;
+    transition: 1s;
+}
+
+.enemy,
+.result_displayer,
+.player {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+
+@media(max-width: 768px) {
+    .player {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .player img {
+        margin-bottom: 50px;
+        place-self: center center;
+    }
+}
