@@ -22,13 +22,8 @@ img {
     background-color: #cacacab9;
     border: 15px solid #2e2714;
 }
-/* .player img:hover {
+.player img:hover {
     background-color: #000000d3;
-    border: 15px solid #2e2714;
-    transition: 1s;
-} */
-
-.player img.cover_up{
     border: 15px solid #2e2714;
     transition: 1s;
 }

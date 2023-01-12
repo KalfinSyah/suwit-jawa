@@ -39,7 +39,7 @@ choice.forEach(function(choice){
             // if i elephant, bot human, i win, else lose
             if(your_choice == item_suit[0]) {
                 h1_result_displayer.innerHTML = (bot_choice == item_suit[1]) ? 'You win' : 'You lose';
-        
+                
                 if(h1_result_displayer.innerHTML == 'You win'){
                     counting_player_score += 1;
                     player_score_h1.innerHTML = counting_player_score;
@@ -71,22 +71,4 @@ choice.forEach(function(choice){
             }
         }
     });
-});
-
-player_thumb.addEventListener('click', function(){
-    player_thumb.classList.add('cover_up');
-    player_indexFinger.classList.remove('cover_up');
-    player_pinky.classList.remove('cover_up');
-});
-
-player_indexFinger.addEventListener('click', function(){
-    player_thumb.classList.remove('cover_up');
-    player_indexFinger.classList.add('cover_up');
-    player_pinky.classList.remove('cover_up');
-});
-
-player_pinky.addEventListener('click', function(){
-    player_thumb.classList.remove('cover_up');
-    player_indexFinger.classList.remove('cover_up');
-    player_pinky.classList.add('cover_up');
 });
